@@ -1,8 +1,12 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
+import { useHistory } from 'react-router';
+import { UserContext } from '../../App';
 
 const FeatureRequest = () => {
+    const [loggedinUser, setLoggedinUser] = useContext(UserContext);
+    const history = useHistory();
 
     const [featureData, setFeatureData] = useState({
         title: '',
@@ -14,6 +18,8 @@ const FeatureRequest = () => {
     const [logoURL, setLogoURL] = useState(null)
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const onSubmit = data => {
+        if (loggedinUser.email) {
+
         reset('', {
             keepValues: false,
         })
@@ -36,6 +42,10 @@ const FeatureRequest = () => {
             .then(res => res.json())
             .then(data => console.log(data))
             .catch(err => console.log(err))
+        }
+        else(
+            history.push("/login")
+        )
     };
     const handleImageUpload = event => {
         console.log(event.target.files[0])
