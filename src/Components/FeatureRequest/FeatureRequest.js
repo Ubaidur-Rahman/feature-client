@@ -25,7 +25,7 @@ const FeatureRequest = () => {
             status: data.status,
             logo: logoURL
         }
-        const url = 'http://localhost:5055/feature/addFeature'
+        const url = 'https://shielded-lowlands-99329.herokuapp.com/feature/addFeature'
         fetch(url, {
             method: 'POST',
             headers: {

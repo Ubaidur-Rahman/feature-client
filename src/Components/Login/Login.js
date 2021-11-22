@@ -38,7 +38,7 @@ const Login = () => {
       password: data.password
   }
  
-  const loginUrl = 'http://localhost:5055/users/login'
+  const loginUrl = 'https://shielded-lowlands-99329.herokuapp.com/users/login'
   fetch(loginUrl, {
       method: 'POST',
       headers: {

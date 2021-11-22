@@ -36,7 +36,7 @@ const newUserData = {
     password: data.password,
   };
 
-  const signupUrl = "http://localhost:5055/users/signup";
+  const signupUrl = "https://shielded-lowlands-99329.herokuapp.com/users/signup";
   console.log(newUserData)
   fetch(signupUrl, {
     method: "POST",

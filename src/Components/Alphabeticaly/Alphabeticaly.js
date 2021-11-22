@@ -7,7 +7,7 @@ const Alphabeticaly = () => {
 
     const [allFeatures, setAllFeatures] = useState([])
     useEffect(() => {
-        const url = `http://localhost:5055/feature/allFeature`
+        const url = `https://shielded-lowlands-99329.herokuapp.com/feature/allFeature`
         fetch(url, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")

@@ -18,7 +18,7 @@ const SingleFeature = ({ feature }) => {
     const [data, setData] = useState([])
     const [state, setState] = useState([])
     useEffect(() => {
-        const url = `http://localhost:5055/users/allUser`
+        const url = `https://shielded-lowlands-99329.herokuapp.com/users/allUser`
         fetch(url, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
@@ -31,7 +31,7 @@ const SingleFeature = ({ feature }) => {
 
     const [allFeatures, setAllFeatures] = useState([])
     useEffect(() => {
-        const url = `http://localhost:5055/feature/allFeature`
+        const url = `https://shielded-lowlands-99329.herokuapp.com/feature/allFeature`
         fetch(url, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
@@ -50,7 +50,7 @@ const SingleFeature = ({ feature }) => {
             
         
         console.log(id)
-        fetch('http://localhost:5055/feature/vote', {
+        fetch('https://shielded-lowlands-99329.herokuapp.com/feature/vote', {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -82,7 +82,7 @@ const SingleFeature = ({ feature }) => {
     }
 
     const unlikePost = (id) => {
-        fetch('http://localhost:5055/feature/unVote', {
+        fetch('https://shielded-lowlands-99329.herokuapp.com/feature/unVote', {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

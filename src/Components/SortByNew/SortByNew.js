@@ -6,7 +6,7 @@ import Sort from '../Sort/Sort';
 const SortByNew = () => {
     const [allFeatures, setAllFeatures] = useState([])
     useEffect(() => {
-        const url = `http://localhost:5055/feature/allFeatureByNew`
+        const url = `https://shielded-lowlands-99329.herokuapp.com/feature/allFeatureByNew`
         fetch(url, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
