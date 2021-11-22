@@ -1,0 +1,124 @@
+
+.user-action-box {
+    height: 40px;
+    width: 100%;
+    background: #ecf3f8;
+    border: none;
+    border-radius: 8px;
+    padding-left: 12%;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+  
+  
+  
+  .account-container .left {
+    background: rgba(220, 220, 220, 0.2);
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .account-container img{
+    padding: 50px;
+  }
+  
+  .account-container .right {
+    background: #FFFFFF;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .user-info {
+      width: 315px;
+      height: auto;
+      /* border: 1px solid slateblue; */
+  }
+  .user-info .title {
+    font-weight: 700;
+    font-size: 23px;
+  }
+  .normal-text {
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+  .forgot-password {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .account-operation {
+    text-align: center;
+  }
+  .account-operation .link {
+    font-weight: 600;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .user-information-collection-first-child {
+    margin: 22px 0 10px 0;
+  }
+  
+  .user-information-collection {
+    margin: 10px 0;
+    position: relative;
+  }
+  .user-action-box {
+    height: 40px;
+    width: 100%;
+    background: #ecf3f8;
+    border: none;
+    border-radius: 8px;
+    padding-left: 12%;
+  }
+  
+  .user-action-icon {
+    position: absolute;
+    left: 4%;
+    top: 25%;
+    font-size: 14px;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  
+  .user-information-collection {
+    margin: 10px 0;
+    position: relative;
+  }
+  
+  .remember-me input {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .action-button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    /* background: #12192C; */
+    background:#5390D4;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  

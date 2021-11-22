@@ -1,0 +1,33 @@
+.post-info-category {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0d0d0d;
+    color: #fff;
+    min-height: 25px;
+    line-height: 25px;
+    z-index: 10;
+    padding-right: 21px;
+    padding-left: 13px;
+    border-radius: 15px 0 0 15px ;
+}
+
+.post-info-category::before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 6px;
+    background-color: #4e89b9;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: width .2s ease;
+    -moz-transition: width .2s ease;
+    transition: width .2s ease;
+}
+.post-info-category:hover::before {
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+}
